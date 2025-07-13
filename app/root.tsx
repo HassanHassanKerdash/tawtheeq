@@ -1,37 +1,24 @@
 import '../init';
-
+import { kawkabLoader } from '../kawkab';
 import {
+  Kawkab,
   Outlet,
   Meta,
   Links,
   Scripts,
   ScrollRestoration,
-  TranslationProvider,
-  formatTranslations,
-  t,
   getCurrentLanguage,
   isRTL,
+  t,
   type LoaderFunctionArgs,
-  initLanguageFromRequest,
-  useLoaderData
+  useLoaderData,
 } from 'kawkab-frontend';
-import configuration from './configuration';
 
 import './app.css';
 
-export async function loader({ request }: LoaderFunctionArgs) {
-  const cookieHeader = request.headers.get('Cookie') || '';
-
-  const headers: Record<string, string> = {};
-  if (cookieHeader) headers.cookie = cookieHeader;
-
-  const resourcesTranslations = formatTranslations(import.meta.glob('./*/translations/*.json', { eager: true }));
-  const currentLang = initLanguageFromRequest(resourcesTranslations, configuration.translation.defaultLang, { headers });
-
+export async function loader(args: LoaderFunctionArgs) {
   return {
-    resourcesTranslations: resourcesTranslations,
-    currentLang,
-    cookieHeader
+    kawkab: await kawkabLoader(args),
   };
 }
 
@@ -42,32 +29,32 @@ export function meta() {
   return [
     {
       title: t('app.name'),
-      charset: 'utf-8'
+      charset: 'utf-8',
     },
     {
-      name: "language",
-      content: currentLang
+      name: 'language',
+      content: currentLang,
     },
     {
-      name: "direction",
-      content: isRightToLeft ? 'rtl' : 'ltr'
-    }
+      name: 'direction',
+      content: isRightToLeft ? 'rtl' : 'ltr',
+    },
   ];
 }
 
 export const links = () => [
   {
-    rel: "preconnect",
-    href: "https://fonts.googleapis.com"
+    rel: 'preconnect',
+    href: 'https://fonts.googleapis.com',
   },
   {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
+    rel: 'preconnect',
+    href: 'https://fonts.gstatic.com',
+    crossOrigin: 'anonymous',
   },
   {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap",
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap',
   },
 ];
 
@@ -93,35 +80,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { resourcesTranslations, currentLang, cookieHeader } = useLoaderData();
-
-  const safeResourcesTranslations = (resourcesTranslations && Object.keys(resourcesTranslations).length > 0)
-    ? resourcesTranslations
-    : {
-      en: {
-        translation: {
-          app: {
-            name: "Kawkab",
-          }
-        }
-      },
-      ar: {
-        translation: {
-          app: {
-            name: "كوكب",
-          }
-        }
-      }
-    };
-
+  const data = useLoaderData();
+  
   return (
-    <TranslationProvider
-      resources={safeResourcesTranslations}
-      defaultLang={currentLang}
-      currentLang={currentLang}
-      cookieHeader={cookieHeader}
-    >
+    <Kawkab data={data}>
       <Outlet />
-    </TranslationProvider>
+    </Kawkab>
   );
 }
