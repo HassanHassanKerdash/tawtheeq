@@ -1,0 +1,51 @@
+{
+  "name": "tawtheeq",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n \"ROUTES,KAWKAB\" -c \"yellow.bold,blue.bold\" \"kawkab-frontend-generate-routes\" \"react-router dev\"",
+    "build": "react-router build",
+    "start": "dotenv -e .env.production -- cross-env PORT=$KAWKAB_APP_PORT react-router-serve ./build/server/index.js",
+    "kawkab": "kawkab-frontend"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.5.3",
+    "@react-router/serve": "^7.5.3",
+    "@tailwindcss/typography": "^0.5.16",
+    "dompurify": "^3.2.6",
+    "fast-glob": "^3.3.3",
+    "fuse.js": "^7.1.0",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "isbot": "^5.1.27",
+    "kawkab-frontend": "^1.0.0-alpha.43",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-highlight-words": "^0.21.0",
+    "react-i18next": "^14.1.2",
+    "react-markdown": "^10.1.0",
+    "react-router": "^7.5.3",
+    "react-router-dom": "^7.6.3",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark-gfm": "^4.0.1",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.5.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/react-highlight-words": "^0.20.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^4.1.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

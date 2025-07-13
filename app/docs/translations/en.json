@@ -1,0 +1,20 @@
+{
+  "sidebar": {
+    "sections": {
+      "getting-started": "Getting Started",
+      "core-concepts": "Core Concepts",
+      "advanced": "Advanced"
+    },
+    "links": {
+      "introduction": "Introduction",
+      "installation": "Installation",
+      "routing": "Routing",
+      "controllers": "Controllers",
+      "validation": "Validation",
+      "dependency-injection": "Dependency Injection",
+      "middleware": "Middleware",
+      "authentication": "Authentication",
+      "testing": "Testing"
+    }
+  }
+}

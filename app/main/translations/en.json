@@ -1,0 +1,119 @@
+{
+  "app": {
+    "name": "Tawtheeq",
+    "description": "Tawtheeq is a modern, free, and open-source documentation platform designed to empower developers and teams to create, organize, and share beautiful documentation with ease. We focus on providing a user-friendly, collaborative, and powerful documentation experience, making Tawtheeq the ideal choice for projects of all sizes.",
+    "keywords": "Tawtheeq, documentation, open-source, modern, free",
+    "versions": {
+      "latest": "Latest"
+    }
+  },
+  "introduction": {
+    "badge": "Introduction",
+    "title": "📚 Welcome to Tawtheeq",
+    "description": "Tawtheeq is a modern, free, and open-source documentation platform designed to empower developers and teams to create, organize, and share beautiful documentation with ease. We focus on providing a user-friendly, collaborative, and powerful documentation experience, making Tawtheeq the ideal choice for projects of all sizes."
+  },
+  "whatIs": {
+    "title": "What is Tawtheeq?",
+    "description": "Tawtheeq is an open-source documentation platform that transforms the way teams create and maintain documentation. Built with modern technologies and designed for collaboration, it offers a seamless experience for writing, organizing, and sharing knowledge across teams and communities."
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "description": "Get started with Tawtheeq in minutes. Create your first documentation project and start writing beautiful docs with markdown support, collaborative editing, and real-time preview.",
+    "codeExample": {
+      "title": "# Getting Started with Tawtheeq",
+      "installation": "## Installation",
+      "firstPage": "## Your first documentation page",
+      "welcome": "Welcome to **Tawtheeq**! 🎉",
+      "description": "This is your first documentation page.",
+      "markdown": "You can write in markdown and see",
+      "realTime": "changes in real-time!"
+    },
+    "availableAt": "Your documentation site will be available at",
+    "liveReload": "with live reload enabled!"
+  },
+  "coreFeatures": {
+    "title": "Core Features",
+    "description": "Tawtheeq is packed with features that make documentation creation and maintenance a breeze for individuals and teams.",
+    "features": {
+      "markdown": {
+        "title": "Rich Markdown Support",
+        "description": "Write documentation using extended Markdown with support for tables, code blocks, math equations, diagrams, and custom components for enhanced content creation."
+      },
+      "collaboration": {
+        "title": "Real-time Collaboration",
+        "description": "Collaborate with your team in real-time with live editing, comments, suggestions, and version control integration to streamline your documentation workflow."
+      },
+      "themes": {
+        "title": "Beautiful Themes",
+        "description": "Choose from a variety of professionally designed themes or create your own. Customize colors, fonts, and layouts to match your brand and style preferences."
+      },
+      "search": {
+        "title": "Powerful Search",
+        "description": "Built-in full-text search with advanced filters, tagging system, and AI-powered content discovery to help users find information quickly and efficiently."
+      },
+      "deployment": {
+        "title": "Easy Deployment",
+        "description": "Deploy your documentation to popular hosting platforms with one click. Support for GitHub Pages, Netlify, Vercel, and custom domains with SSL certificates."
+      },
+      "integrations": {
+        "title": "Rich Integrations",
+        "description": "Connect with your favorite tools including GitHub, GitLab, Slack, Discord, and more. Sync content, get notifications, and maintain consistency across platforms."
+      }
+    }
+  },
+  "contributing": {
+    "title": "Contributing",
+    "description": "Tawtheeq is an open-source project and we welcome contributions from the community. Whether it's reporting a bug, suggesting a feature, improving documentation, or writing code, your help makes Tawtheeq better for everyone. Join our community and help us build the future of documentation.",
+    "buttons": {
+      "viewGithub": "View on GitHub",
+      "readDocs": "Read Docs"
+    }
+  },
+  "statistics": {
+    "sites": "Documentation Sites",
+    "contributors": "Contributors",
+    "stars": "GitHub Stars",
+    "uptime": "Uptime"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "docs": "Docs",
+    "examples": "Examples",
+    "projects": "Projects",
+    "blog": "Blog",
+    "version": "Version",
+    "language": "Language"
+  },
+  "footer": {
+    "coreConcepts": "Core Concepts",
+    "hmvcArchitecture": "HMVC Architecture",
+    "dependencyInjection": "Dependency Injection",
+    "caching": "Caching",
+    "internationalization": "Internationalization",
+    "errorHandling": "Error Handling",
+    "settings": "Settings"
+  },
+  "copied": "Copied!",
+  "copy": "Copy",
+  "loading": "Loading...",
+  "errorTitle": "Error",
+  "errorDescription": "An error occurred while loading content",
+  "directLinkTo": "Direct link to {{text}}",
+  "opensInNewTab": "opens in new tab",
+  "blockquote": "Blockquote",
+  "codeBlockIn": "Code block in {{language}}",
+  "table": "Table",
+  "image": "Image",
+  "articleContent": "Article content",
+  "skipToMainContent": "Skip to main content",
+  "onThisPage": "On This Page:",
+  "goToTop": "Go to top",
+  "goToTopTitle": "Go to top",
+  "viewOnGitHub": "View on GitHub",
+  "noContentSidebar": "Read more in the page",
+  "search": {
+    "indexing": "Indexing content...",
+    "placeholder": "Search documentation...",
+    "noResults": "No results for"
+  }
+}

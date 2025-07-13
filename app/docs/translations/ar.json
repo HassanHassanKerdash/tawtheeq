@@ -1,0 +1,20 @@
+{
+  "sidebar": {
+    "sections": {
+      "getting-started": "البدء",
+      "core-concepts": "المفاهيم الأساسية",
+      "advanced": "متقدم"
+    },
+    "links": {
+      "introduction": "المقدمة",
+      "installation": "التثبيت",
+      "routing": "التوجيه",
+      "controllers": "المتحكمات",
+      "validation": "التحقق",
+      "dependency-injection": "الحقن التلقائي",
+      "middleware": "البرمجيات الوسيطة",
+      "authentication": "المصادقة",
+      "testing": "الاختبار"
+    }
+  }
+}
