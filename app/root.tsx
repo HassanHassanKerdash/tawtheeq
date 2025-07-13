@@ -94,15 +94,34 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   const { resourcesTranslations, currentLang, cookieHeader } = useLoaderData();
-    
+
+  const safeResourcesTranslations = (resourcesTranslations && Object.keys(resourcesTranslations).length > 0)
+    ? resourcesTranslations
+    : {
+      en: {
+        translation: {
+          app: {
+            name: "Kawkab",
+          }
+        }
+      },
+      ar: {
+        translation: {
+          app: {
+            name: "كوكب",
+          }
+        }
+      }
+    };
+
   return (
     <TranslationProvider
-      resources={resourcesTranslations}
+      resources={safeResourcesTranslations}
       defaultLang={currentLang}
       currentLang={currentLang}
       cookieHeader={cookieHeader}
     >
-        <Outlet />
+      <Outlet />
     </TranslationProvider>
   );
 }
