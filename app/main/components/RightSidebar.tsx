@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from "kawkab-frontend";
+import { useTranslation } from 'kawkab';
 import { useRightSidebarStore } from '../stores/useRightSidebarStore';
 
 export default function RightSidebar() {

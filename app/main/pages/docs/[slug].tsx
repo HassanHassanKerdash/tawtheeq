@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { t, useTranslation } from "kawkab-frontend";
+import { t, useTranslation } from 'kawkab';
 import MarkdownRenderer from "~/main/components/MarkdownViewer";
 import sidebarSections, { type SidebarLink } from "../../../docs/config/sidebarLinks";
 

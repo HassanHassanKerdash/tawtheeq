@@ -1,4 +1,4 @@
-import { init, setEnv } from 'kawkab-frontend';
+import { init, setEnv } from 'kawkab';
 import configuration from './app/configuration';
 
 setEnv(import.meta.env);

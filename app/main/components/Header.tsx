@@ -1,4 +1,4 @@
-import { Link, useTranslation } from "kawkab-frontend";
+import { Link, useTranslation } from 'kawkab';
 import langs from "../config/langs";
 import versions from "../config/versions";
 import links from "../config/links";

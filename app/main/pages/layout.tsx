@@ -1,6 +1,6 @@
 import '../../main.css'
 import { useState, useEffect, useRef } from 'react'
-import { Outlet, t, useTranslation, useLocation } from 'kawkab-frontend';
+import { Outlet, t, useTranslation, useLocation } from 'kawkab';
 import Header from '../components/Header';
 import MobileMenu from '../components/MobileMenu';
 import Sidebar from '../components/Sidebar';

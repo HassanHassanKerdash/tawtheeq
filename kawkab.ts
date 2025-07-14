@@ -1,4 +1,4 @@
-import { formatTranslations, initLanguageFromRequest, type LoaderFunctionArgs } from "kawkab-frontend";
+import { formatTranslations, initLanguageFromRequest, type LoaderFunctionArgs } from 'kawkab';
 import configuration from "~/configuration";
 
 export function loadTranslations(request: Request) {

@@ -14,6 +14,11 @@ export default defineConfig(({ mode }) => {
       tsconfigPaths(),
       ...kawkabVitePlugins()
     ],
+    resolve: {
+      alias: {
+        kawkab: 'kawkab-frontend'
+      }
+    },
     envPrefix: 'KAWKAB_',
     server: {
       port: parseInt(env.KAWKAB_APP_PORT || '8080'),

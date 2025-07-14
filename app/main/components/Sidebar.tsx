@@ -1,4 +1,4 @@
-import { Link, useTranslation } from "kawkab-frontend";
+import { Link, useTranslation } from 'kawkab';
 import sidebarSections, { type SidebarLink } from "../../docs/config/sidebarLinks";
 
 interface SidebarProps {

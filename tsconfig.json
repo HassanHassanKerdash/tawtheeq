@@ -13,7 +13,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "kawkab": ["node_modules/kawkab-frontend"],
+      "~/*": ["./app/*"],
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,

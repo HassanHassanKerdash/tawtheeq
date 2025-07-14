@@ -1,4 +1,4 @@
-import { env } from 'kawkab-frontend';
+import { env } from 'kawkab';
 
 /**
  * Full application configuration

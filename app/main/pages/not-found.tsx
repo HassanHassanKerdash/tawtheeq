@@ -1,4 +1,4 @@
-import { Link } from "kawkab-frontend";
+import { Link } from 'kawkab';
 
 export function meta() {
   return [

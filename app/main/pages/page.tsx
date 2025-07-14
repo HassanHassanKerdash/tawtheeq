@@ -1,4 +1,4 @@
-import { t, useTranslation } from "kawkab-frontend";
+import { t, useTranslation } from 'kawkab';
 
 export function meta() {
   return [

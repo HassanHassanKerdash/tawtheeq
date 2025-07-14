@@ -12,7 +12,7 @@ import {
   t,
   type LoaderFunctionArgs,
   useLoaderData,
-} from 'kawkab-frontend';
+} from 'kawkab';
 
 import './app.css';
 

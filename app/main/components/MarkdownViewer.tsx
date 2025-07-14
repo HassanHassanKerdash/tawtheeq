@@ -5,7 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import DOMPurify from 'dompurify';
 import { createRoot } from 'react-dom/client';
-import { t, useNavigate } from "kawkab-frontend";
+import { t, useNavigate } from 'kawkab';
 import { useRightSidebarStore, type RightSidebarItem } from "../stores/useRightSidebarStore";
 import { useVersionStore } from '../stores/useVersionStore';
 

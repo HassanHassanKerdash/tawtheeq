@@ -1,4 +1,4 @@
-import { defineStore } from 'kawkab-frontend';
+import { defineStore } from 'kawkab';
 
 interface RightSidebarItem {
   label: string;

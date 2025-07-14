@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Link, useNavigate, useTranslation, t } from 'kawkab-frontend';
+import { Link, useNavigate, useTranslation, t } from 'kawkab';
 import Fuse from 'fuse.js';
 import type { FuseResult } from 'fuse.js';
 import Highlight from 'react-highlight-words';

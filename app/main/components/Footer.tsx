@@ -1,4 +1,4 @@
-import { useTranslation } from 'kawkab-frontend';
+import { useTranslation } from 'kawkab';
 
 export default function Footer() {
   const { t } = useTranslation();
