@@ -63,7 +63,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const isRightToLeft = isRTL();
 
   return (
-    <html lang={currentLang} dir={isRightToLeft ? 'rtl' : 'ltr'}>
+    <html suppressHydrationWarning lang={currentLang} dir={isRightToLeft ? 'rtl' : 'ltr'}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
