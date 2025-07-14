@@ -1,4 +1,4 @@
-import { createStore } from 'kawkab-frontend';
+import { defineStore } from 'kawkab-frontend';
 
 interface RightSidebarItem {
   label: string;
@@ -12,7 +12,7 @@ interface RightSidebarState {
   setItems: (items: RightSidebarItem[]) => void;
 }
 
-export const useRightSidebarStore = createStore<RightSidebarState>((set) => ({
+export const useRightSidebarStore = defineStore<RightSidebarState>((set) => ({
   items: [],
   setItems: (items) => set({ items }),
 }));

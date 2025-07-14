@@ -1,4 +1,4 @@
-import { createStore } from 'kawkab-frontend';
+import { defineStore } from 'kawkab-frontend';
 
 interface SearchState {
   isOpen: boolean;
@@ -7,7 +7,7 @@ interface SearchState {
   toggle: () => void;
 }
 
-export const useSearchStore = createStore<SearchState>((set) => ({
+export const useSearchStore = defineStore<SearchState>((set) => ({
   isOpen: false,
   open: () => set({ isOpen: true }),
   close: () => set({ isOpen: false }),
