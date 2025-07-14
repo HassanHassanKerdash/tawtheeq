@@ -1,30 +1,13 @@
-#!/usr/bin/env node
+import { init, setEnv } from 'kawkab-frontend';
+import configuration from './app/configuration';
 
-import { customMessages, printWelcomeMessage, printStatusMessage, printSystemInfo } from './startup';
-import { spawn, ChildProcess } from 'child_process';
+setEnv(import.meta.env);
 
-printWelcomeMessage();
-printSystemInfo();
-
-printStatusMessage('STARTUP', customMessages.nodemon.start());
-
-const command = 'kawkab-frontend-generate-routes && react-router dev';
-const [cmd, ...args] = command.split(' ');
-
-const child: ChildProcess = spawn(cmd, args, {
-  stdio: 'inherit',
-  shell: true
+init({
+    apiBaseUrl: configuration.api.baseUrl,
+    socketUrl: configuration.socket.url,
+    storageType: configuration.storage.type as "localStorage" | "sessionStorage",
+    auth: {
+        tokenKey: configuration.auth.tokenKey,
+    },
 });
-
-child.on('error', (error: Error) => {
-  printStatusMessage('ERROR', customMessages.errors.serverError());
-  console.error(error);
-});
-
-child.on('exit', (code: number | null) => {
-  if (code === 0) {
-    printStatusMessage('SUCCESS', customMessages.nodemon.exit());
-  } else {
-    printStatusMessage('ERROR', `Server stopped with code: ${code}`);
-  }
-}); 

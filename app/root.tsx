@@ -1,4 +1,4 @@
-import '../init';
+import '../index';
 import { kawkabLoader } from '../kawkab';
 import {
   Kawkab,
@@ -81,10 +81,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   const data = useLoaderData();
-  
+
   return (
     <Kawkab data={data}>
       <Outlet />
     </Kawkab>
   );
 }
+

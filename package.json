@@ -2,7 +2,7 @@
   "name": "tawtheeq",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -n \"ROUTES,KAWKAB\" -c \"yellow.bold,blue.bold\" \"kawkab-frontend-generate-routes\" \"react-router dev\"",
+    "dev": "concurrently -n \"ROUTES,KAWKAB\" -c \"yellow.bold,blue.bold\" \"kawkab-frontend-generate-routes\" \"vite\"",
     "build": "react-router build",
     "start": "dotenv -e .env.production -- cross-env PORT=$KAWKAB_APP_PORT react-router-serve ./build/server/index.js",
     "kawkab": "kawkab-frontend"
@@ -17,7 +17,7 @@
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^7.2.1",
     "isbot": "^5.1.27",
-    "kawkab-frontend": "^1.0.0-alpha.50",
+    "kawkab-frontend": "^1.0.0-alpha.56",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-highlight-words": "^0.21.0",
@@ -46,6 +46,7 @@
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
+    "vite-plugin-full-reload": "^1.2.0",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
